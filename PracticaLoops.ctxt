@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=PracticaLoops
+comment0.text=\r\n\ \ \ \ \r\n
+comment1.params=
+comment1.target=PracticaLoops()
+comment1.text=\r\n\ Constructor\ \ \r\n
+comment2.params=limite
+comment2.target=int\ obtenerAleatorio(int)
+comment2.text=\r\n\ Devuelve\ un\ valor\ aleatorio\ entre\ 0\ y\ limite\ (exclusive)\r\n\ \r\n
+comment3.params=n
+comment3.target=boolean\ terminaEn7(int)
+comment3.text=\r\n\ devuelve\ true\ si\ termina\ en\ 7,\ false\ en\ otro\ caso.\ Sin\ if\r\n
+comment4.params=n
+comment4.target=int\ intercalarCeros(int)
+comment4.text=\r\n\ \ Devuelve\ un\ n\u00FAmero\ n\ con\ las\ cifras\ no\ nulas\ en\ el\ mismo\ orden\r\n\ \ pero\ entre\ cada\ par\ de\ cifras\ no\ nulas\ consecutivas\ el\ n\u00FAmero\r\n\ \ devuelto\ tiene\ un\ 0\r\n\ \ \r\n\ \ intercalarCeros(7)\ \=\ 7\r\n\ \ intercalarCeros(17)\ \=\ 107\r\n\ \ intercalarCeros(113)\ \=\ 10103\r\n\ \ intercalarCeros(170)\ \=\ 107\r\n\ \ intercalarCeros(1203)\ \=\ 10203\r\n\ \ intercalarCeros(1000203)\ \=\ 10203\r\n\ \ intercalarCeros(912000)\ \=\ 90102\r\n\ \ intercalarCeros(91002000)\ \=\ 90102\r\n
+comment5.params=
+comment5.target=void\ generarNumeros()
+comment5.text=\r\n\ \ El\ m\u00E9todo\ \ genera\ \ n\u00FAmeros\ aleatorios\ \ entre\ 0\ y\ 100000\ (exclusive)\r\n\ \ y\ calcula\ y\ escribe\ cada\ valor\ aleatorio\ junto\ con\ su\ versi\u00F3n\ con\ ceros\ intercalados\r\n\ \ \ \ \ \ \r\n\ \ El\ proceso\ termina\ cuando\ sale\ un\ aleatorio\ igual\ a\ 0\ o\ un\ n\u00FAmero\ que\ acaba\ en\ 7\ \ \ \ \ \ \ \r\n\ \ \ \r\n\ \ Cada\ n\u00BA\ aleatorio\ se\ muestra\ en\ un\ espacio\ de\ 15\ posiciones\ en\ la\ pantalla\ \ \r\n\ \ y\ al\ lado\ ese\ mismo\ valor\ con\ los\ ceros\ intercalados\ en\ 25\ posiciones\r\n\ \ \r\n\ \ Si\ ya\ el\ primer\ aleatorio\ termina\ en\ 7\ se\ visualizar\u00E1\ un\ mensaje\ que\ as\u00ED\ lo\ indique\r\n\ \ \r\n\ \ Utiliza\ solo\ bucles\ while\r\n
+comment6.params=grosor\ altura
+comment6.target=void\ dibujarLetra(int,\ int)
+comment6.text=\r\n\ \ Dibuja\ la\ letra\ indicada\ (ver\ figura\ en\ el\ enunciado)\r\n\ \ Con\ bucles\ for\r\n\ \ \r\n\ \ Hay\ que\ usar\ el\ m\u00E9todo\ escribirCaracter()\r\n\ \ \r\n\ \ \r\n\ \ \ grosor\ y\ altura\ asumimos\ correctos\r\n\ \ \r\n\ \ \ \ \ \ \r\n
+comment7.params=caracter\ n
+comment7.target=void\ escribirCaracter(char,\ int)
+comment7.text=\r\n\ \ escribe\ n\ veces\ el\ caracter\ \ indicado\ en\ 2\ posiciones\r\n\ \ en\ la\ misma\ l\u00EDnea\r\n\ \ con\ bucles\ for\r\n
+numComments=8

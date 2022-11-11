@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=TestPracticaLoops
+comment0.text=\r\n\ Incluye\ todo\ el\ c\u00F3digo\ dentro\ del\ main()\r\n\ No\ declares\ ning\u00FAn\ nuevo\ m\u00E9todo\ en\ esta\ clase\ ni\ atributos\r\n\ \ \r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ \ Punto\ de\ entrada\ a\ la\ aplicaci\u00F3n\r\n\ \ -\ define\ y\ crea\ el\ teclado\ \ \r\n\ \ -\ define\ e\ instancia\ un\ objeto\ PracticaLoops\r\n\ \ -\ pide\ al\ usuario\ la\ cantidad\ m\u00E1xima\ de\ aleatorios\ a\ generar\r\n\ \ \ \ (valida\ que\ sea\ \ un\ n\u00BA\ positivo)\r\n\ \ -\ muestra\ los\ n\u00FAmeros\ aleatorios\ y\ sus\ valores\ con\ ceros\ intercalados\r\n\ \ -\ haz\ una\ pausa\ y\ borra\ la\ pantalla\ \ \ \ \r\n\ \ \r\n\ \ -\ pide\ al\ usuario\ un\ valor\ para\ el\ grosor\ de\ la\ letra\ \r\n\ \ \ \ \ \ \ \ \ \ Valida\ que\ este\ valor\ es\ correcto,\ es\ decir,\r\n\ \ \ \ \ \ \ \ \ \ est\u00E1\ en\ el\ intervalo\ 0\ <\ grosor\ <\=\ 5\r\n\ \ -\ pide\ al\ usuario\ un\ valor\ para\ ela\ altura\ de\ la\ letra\ \r\n\ \ \ \ \ \ \ \ \ \ Valida\ que\ este\ valor\ es\ correcto,\ es\ decir,\r\n\ \ \ \ \ \ \ \ \ \ est\u00E1\ en\ el\ intervalo\ (grosor\ <\ altura\ \ <\=\ 20)\ \ y\ adem\u00E1s\ (altura\ -\ grosor)\ es\ \ par\ \ \ \ \ \ \r\n\ \ -\ muestra\ la\ letra\ \ \r\n\ \ \r\n
+numComments=2
