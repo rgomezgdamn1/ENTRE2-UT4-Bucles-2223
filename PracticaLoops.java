@@ -87,14 +87,14 @@ public class PracticaLoops {
      *  Utiliza solo bucles while
      */
     public void generarNumeros()   {
-        int aleatorio = generador.nextInt(100000);
-        while(aleatorio != 0 && terminaEn7(aleatorio) == false){
+        int tmp = obtenerAleatorio(100000);
+        while(tmp != 0 && terminaEn7(tmp) == false){
             System.out.printf("El número es: %15d ,Con ceros intercalados: %25d \n"
-            ,aleatorio,intercalarCeros(aleatorio));
-            aleatorio = generador.nextInt(100000);
+            ,tmp,intercalarCeros(tmp));
+            tmp = obtenerAleatorio(100000);
         }
         System.out.printf("El número es: %15d ,Con ceros intercalados: %25d \n"
-        ,aleatorio,intercalarCeros(aleatorio));
+        ,tmp,intercalarCeros(tmp));
     }
 
     /**
@@ -109,9 +109,24 @@ public class PracticaLoops {
      *      
      */
     public void dibujarLetra(int grosor, int altura)    {
-        for(int i = 0;i < altura; i++){
-            for(int j = 0; j < grosor; j++){
-               escribirCaracter(CARACTER,1);
+        System.out.println("Letra - Grosor: " + grosor + " Altura: " + altura);
+        int tmp = (altura - grosor) / 2;
+        for(int i = 0;i < grosor; i++){
+            for(int j = 0; j < altura; j++){
+                escribirCaracter(CARACTER,1);
+            }
+            System.out.println();
+        }
+
+        for(int k = 0; k < (altura - grosor); k++){
+            for (int m = 0; m < tmp; m++){
+                escribirCaracter(ESPACIO,1);
+            }
+            for(int n = 0;n < grosor; n++){
+                escribirCaracter(CARACTER,1);
+            }
+            for (int o = 0; o< tmp; o++){
+                escribirCaracter(ESPACIO,1);
             }
             System.out.println();
         }

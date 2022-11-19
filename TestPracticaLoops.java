@@ -27,10 +27,36 @@ public class TestPracticaLoops
      *  
      */
     public static void main(String[] args)    {
-         // TODO
-         
-         
-         
+        Scanner teclado = new Scanner(System.in);
+        PracticaLoops obj1 = new PracticaLoops();
+        
+        System.out.println("Introduzca un número positivo");
+        int numeros = teclado.nextInt();
+        while(numeros < 0){
+            System.err.println("Error, introduzca un número positivo");
+        }
+        int tmp = obj1.obtenerAleatorio(numeros);
+        obj1.intercalarCeros(tmp);
+        
+        Utilidades.hacerPausa();
+        Utilidades.borrarPantalla();
+        
+        System.out.println("Teclea grosor de la letra (1 <= grosor <= 5): ");
+        int grosor = teclado.nextInt();
+        while(grosor > 5 || grosor < 1){
+            System.err.println("Grosor incorrecto");
+            grosor = teclado.nextInt();
+        }
+        
+        System.out.println
+        ("Teclea altura de la letra (grosor < altura <= 20) y (altura - grosor es par): ");
+        int altura = teclado.nextInt();
+        while((altura < grosor || altura > 20) || (altura - grosor) % 2 != 0){
+            System.err.println("Altura incorrecta");
+            altura = teclado.nextInt();
+        }
+        
+        obj1.dibujarLetra(grosor,altura);
     }
 }
 
