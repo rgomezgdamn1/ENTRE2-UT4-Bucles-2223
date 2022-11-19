@@ -19,18 +19,15 @@ public class PracticaLoops {
      * 
      */
     public int obtenerAleatorio(int limite) {
-        // TODO
-
-        return 0;
+        int tmp = generador.nextInt(limite);
+        return tmp;
     }
 
     /**
      * devuelve true si termina en 7, false en otro caso. Sin if
      */
     public boolean terminaEn7(int n) {         
-        // TODO
-
-        return true;
+        return n % 10 == 7;
     }
 
     /**
@@ -48,10 +45,32 @@ public class PracticaLoops {
      *  intercalarCeros(91002000) = 90102
      */
     public int intercalarCeros(int n) {
-        // TODO
-
-
-        return 0;
+        int aux = 0;
+        int i = 0;
+        while(n != 0){
+            int cifra = n % 10;
+            while(cifra == 0){
+                n /= 10;
+                cifra = n % 10;
+            }
+            aux = cifra * (int)Math.pow(10,i) + aux;
+            n /= 10;
+            i++;
+        }
+        int cifras = 0;
+        int tmp = aux;
+        while (tmp != 0)  {
+            tmp = tmp / 10;
+            cifras ++;
+        }
+        int aux2 = 0;
+        for(int j = 0;j < cifras;j++){
+            int tmp2 = aux % 10;
+            int k = 2 * j;
+            aux2 = tmp2 * (int)Math.pow(10,k) + aux2;
+            aux = aux / 10;
+        }
+        return aux2;
     }
 
     /**
@@ -68,13 +87,16 @@ public class PracticaLoops {
      *  Utiliza solo bucles while
      */
     public void generarNumeros()   {
-        // TODO
-
-        
-        
-        
+        int aleatorio = generador.nextInt(100000);
+        while(aleatorio != 0 && terminaEn7(aleatorio) == false){
+            System.out.printf("El número es: %15d ,Con ceros intercalados: %25d \n"
+            ,aleatorio,intercalarCeros(aleatorio));
+            aleatorio = generador.nextInt(100000);
+        }
+        System.out.printf("El número es: %15d ,Con ceros intercalados: %25d \n"
+        ,aleatorio,intercalarCeros(aleatorio));
     }
-    
+
     /**
      *  Dibuja la letra indicada (ver figura en el enunciado)
      *  Con bucles for
@@ -87,10 +109,12 @@ public class PracticaLoops {
      *      
      */
     public void dibujarLetra(int grosor, int altura)    {
-        // TODO
-
-        
-        
+        for(int i = 0;i < altura; i++){
+            for(int j = 0; j < grosor; j++){
+               escribirCaracter(CARACTER,1);
+            }
+            System.out.println();
+        }
     }
 
     /**
@@ -99,10 +123,9 @@ public class PracticaLoops {
      *  con bucles for
      */
     private void escribirCaracter(char caracter, int n)    {
-         // TODO
-         
-         
-         
-    }
+        for (int i = 0;i < n; i++){
+            System.out.printf("%2c",caracter);
+        }
 
+    }
 }
